@@ -197,7 +197,7 @@ body{font-size:16px}
 @keyframes coin-drift{0%{transform:translate3d(0,0,0) rotateY(0) rotateZ(-8deg)}50%{transform:translate3d(-3vw,-5vh,0) rotateY(180deg) rotateZ(8deg)}100%{transform:translate3d(2vw,2vh,0) rotateY(360deg) rotateZ(-8deg)}}
 @keyframes growth-float{0%{transform:translate3d(0,0,0) rotate(5deg) scale(.94)}100%{transform:translate3d(-3vw,5vh,0) rotate(-8deg) scale(1.08)}}
 @keyframes spark-turn{0%{transform:rotate(0) scale(.85)}50%{transform:rotate(180deg) scale(1.15)}100%{transform:rotate(360deg) scale(.85)}}
-@media(max-width:760px){.token-card{left:8vw;top:22vh;width:110px;height:72px}.token-card::before{left:12px;top:13px;width:18px;height:13px}.token-card::after{left:12px;right:12px;bottom:13px}.token-coin{right:12vw;top:64vh;width:66px;height:66px;font-size:25px}.token-growth{right:9vw;top:17vh;width:52px;height:52px;border-radius:15px;font-size:30px}.token-spark{left:75vw;top:76vh;font-size:21px}}
+@media(max-width:760px){.token-card{left:8vw;top:22vh;width:110px;height:72px}.token-card::before{left:12px;top:13px;width:18px;height:13px}.token-card::after{left:12px;right:12px;bottom:13px}.token-coin{right:12vw;top:64vh;width:66px;height:66px;font-size:25px}.token-growth{right:9vw;top:17vh;width:52px;height:52px;border-radius:15px;font-size:30px}.token-growth .arrow-icon{width:27px;height:27px}.token-spark{left:75vw;top:76vh;font-size:21px}}
 @media(prefers-reduced-motion:reduce){.ambient-token{animation:none!important;will-change:auto}}
 
 /* Rounded controls and aligned footer */
@@ -228,6 +228,7 @@ body{font-size:16px}
 .contact-actions .button-direct{background:transparent;color:#565b54;border:1px solid #d7dbd1}
 .contact-actions .button-direct:hover{background:#f2f3ee}
 .arrow-icon{display:inline-block;width:14px;height:14px;flex:none;overflow:visible;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
+.token-growth .arrow-icon{width:34px;height:34px;stroke-width:1.5}
 .button .arrow-icon{width:15px;height:15px}
 .service-action .arrow-icon{transition:transform .2s ease}
 .service-action:hover .arrow-icon{transform:translate(3px,-3px)}
