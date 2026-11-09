@@ -6,31 +6,16 @@
   <meta name="theme-color" content="#f7f7f4">
   <meta name="description" content="Илья помогает подобрать банковские продукты, оформить бизнес и начать партнёрское сотрудничество.">
   <title>Илья — банковские решения и бизнес</title>
-  <!-- После создания счётчика замените YOUR_COUNTER_ID на его числовой ID. -->
-  <script>
-    (function (window, document) {
-      var counterId = 'YOUR_COUNTER_ID';
-      if (!/^\d+$/.test(counterId)) return;
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=114137761', 'ym');
 
-      (function (m, e, t, r, i, k, a) {
-        m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
-        m[i].l = 1 * new Date();
-        for (var j = 0; j < document.scripts.length; j += 1) {
-          if (document.scripts[j].src === r) return;
-        }
-        k = e.createElement(t);
-        a = e.getElementsByTagName(t)[0];
-        k.async = 1;
-        k.src = r;
-        a.parentNode.insertBefore(k, a);
-      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
-
-      window.ym(Number(counterId), 'init', {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true
-      });
-    })(window, document);
+    ym(114137761, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +23,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <noscript><div><img src="https://mc.yandex.ru/watch/114137761" style="position:absolute; left:-9999px;" alt=""></div></noscript>
   <div class="ambient" aria-hidden="true">
     <span class="ambient-token token-card"><i></i><b></b></span>
     <span class="ambient-token token-coin">₽</span>
@@ -49,14 +35,14 @@
     <a class="brand" href="#top" aria-label="Илья — на главную">Илья<span class="brand-dot">.</span></a>
     <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
     <nav class="nav" aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#banks">Банки</a><a href="#about">Обо мне</a><a href="#contact">Контакты</a></nav>
-    <a class="header-contact" href="#contact">Связаться <span>↗</span></a>
+    <a class="header-contact" href="#contact">Связаться <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a>
   </header>
 
   <main id="top">
     <section class="hero section-wrap reveal">
       <div class="eyebrow"><span></span> БАНКОВСКИЕ РЕШЕНИЯ · БИЗНЕС · ПАРТНЁРСТВО</div>
       <h1>Помогаю разобраться<br>в банках и <em>бизнесе.</em></h1>
-      <div class="hero-bottom"><p>Подбор банковских продуктов, регистрация бизнеса и понятный разговор о партнёрстве.</p><a class="button" href="#contact">Обсудить задачу <span>↗</span></a></div>
+      <div class="hero-bottom"><p>Подбор банковских продуктов, регистрация бизнеса и понятный разговор о партнёрстве.</p><a class="button" href="#contact">Обсудить задачу <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a></div>
     </section>
 
     <section class="banks section-wrap reveal" id="banks">
@@ -74,9 +60,9 @@
     <section class="services section-wrap reveal" id="services">
       <div class="section-head"><div><p class="eyebrow">МОИ УСЛУГИ</p><h2>Выберите, что<br><em>актуально вам.</em></h2></div><p class="section-note">У каждой услуги — своя задача и свой следующий шаг.</p></div>
       <div class="service-grid">
-        <article class="service reveal"><p class="service-audience">ЧАСТНЫМ КЛИЕНТАМ</p><h3>Дебетовые карты<br>и кредитки</h3><p>Помогу сравнить предложения банков, подобрать карту под вашу задачу и разобраться в условиях. Решение по заявке принимает банк.</p><a class="service-action" href="#contact">Обсудить подбор <span>↗</span></a></article>
-        <article class="service reveal"><p class="service-audience">БУДУЩИМ ПРЕДПРИНИМАТЕЛЯМ</p><h3>Открыть ИП<br>и счёт для бизнеса</h3><p>Разберём самозанятость и ИП, налоги, ОКВЭД, Госключ и открытие расчётного счёта.</p><a class="service-action" href="#contact">Обсудить запуск <span>↗</span></a></article>
-        <article class="service reveal"><p class="service-audience">БУДУЩИМ ПАРТНЁРАМ</p><h3>Помогать мне<br>и получать доход</h3><p>Приглашаю сотрудничать и рекомендовать банковские продукты. Расскажу, как начать и какие вознаграждения предусмотрены программой. Выплаты зависят от её условий.</p><a class="service-action" href="#contact">Обсудить сотрудничество <span>↗</span></a></article>
+        <article class="service reveal"><p class="service-audience">ЧАСТНЫМ КЛИЕНТАМ</p><h3>Дебетовые карты<br>и кредитки</h3><p>Помогу сравнить предложения банков, подобрать карту под вашу задачу и разобраться в условиях. Решение по заявке принимает банк.</p><a class="service-action" href="#contact">Обсудить подбор <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a></article>
+        <article class="service reveal"><p class="service-audience">БУДУЩИМ ПРЕДПРИНИМАТЕЛЯМ</p><h3>Открыть ИП<br>и счёт для бизнеса</h3><p>Разберём самозанятость и ИП, налоги, ОКВЭД, Госключ и открытие расчётного счёта.</p><a class="service-action" href="#contact">Обсудить запуск <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a></article>
+        <article class="service reveal"><p class="service-audience">БУДУЩИМ ПАРТНЁРАМ</p><h3>Помогать мне<br>и получать доход</h3><p>Приглашаю сотрудничать и рекомендовать банковские продукты. Расскажу, как начать и какие вознаграждения предусмотрены программой. Выплаты зависят от её условий.</p><a class="service-action" href="#contact">Обсудить сотрудничество <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a></article>
       </div>
     </section>
 
@@ -89,11 +75,11 @@
 
     <section class="contact section-wrap reveal" id="contact">
       <div class="contact-copy"><p class="eyebrow">СВЯЗЬ</p><h2>Давайте обсудим<br><em>вашу задачу.</em></h2><p class="contact-note">Можно написать мне напрямую в Telegram прямо сейчас или оставить заявку в Яндекс Форме — я свяжусь с вами. Консультация бесплатная.</p></div>
-      <div class="contact-actions"><a class="button button-bot" href="https://t.me/YOUR_BOT_USERNAME" target="_blank" rel="noopener noreferrer">Перейти к Telegram-боту <span>↗</span></a><a class="button button-form" href="https://forms.yandex.ru/u/REPLACE_WITH_YOUR_FORM_ID/" target="_blank" rel="noopener noreferrer">Оставить заявку в Яндекс Форме <span>↗</span></a><a class="button button-direct" href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">Написать мне в Telegram <span>↗</span></a></div>
+      <div class="contact-actions"><a class="button button-bot" href="https://t.me/YOUR_BOT_USERNAME" target="_blank" rel="noopener noreferrer">Перейти к Telegram-боту <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a><a class="button button-form" href="https://forms.yandex.ru/u/REPLACE_WITH_YOUR_FORM_ID/" target="_blank" rel="noopener noreferrer">Оставить заявку в Яндекс Форме <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a><a class="button button-direct" href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">Написать мне в Telegram <svg class="arrow-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5 4h7v7"/></svg></a></div>
     </section>
   </main>
 
-  <footer class="footer section-wrap"><div class="footer-identity"><a class="brand" href="#top">Илья<span class="brand-dot">.</span></a><span class="footer-ip">ИП Свитковский Илья Владимирович</span></div><span class="footer-copy">© <span id="year"></span></span><a class="footer-top" href="#top">Наверх <span>↑</span></a></footer>
+  <footer class="footer section-wrap"><div class="footer-identity"><a class="brand" href="#top">Илья<span class="brand-dot">.</span></a><span class="footer-ip">ИП Свитковский Илья Владимирович</span></div><span class="footer-copy">© <span id="year"></span></span><a class="footer-top" href="#top">Наверх <svg class="arrow-icon arrow-icon-up" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 13V3M4 7l4-4 4 4"/></svg></a></footer>
   <div class="legal section-wrap">Информация на сайте носит ознакомительный характер. Условия банковских продуктов и возможность их получения определяет соответствующий банк. Партнёрское вознаграждение зависит от правил конкретной программы.</div>
   <script src="script.js" defer></script>
 </body>

@@ -227,6 +227,11 @@ body{font-size:16px}
 .contact-actions .button-form:hover{background:#e3e9d8}
 .contact-actions .button-direct{background:transparent;color:#565b54;border:1px solid #d7dbd1}
 .contact-actions .button-direct:hover{background:#f2f3ee}
+.arrow-icon{display:inline-block;width:14px;height:14px;flex:none;overflow:visible;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;vertical-align:middle}
+.button .arrow-icon{width:15px;height:15px}
+.service-action .arrow-icon{transition:transform .2s ease}
+.service-action:hover .arrow-icon{transform:translate(3px,-3px)}
+.footer-top .arrow-icon{width:13px;height:13px}
 @media(max-width:760px){
   .section-wrap,.topbar{width:calc(100% - 36px)}
   .topbar{height:72px}
