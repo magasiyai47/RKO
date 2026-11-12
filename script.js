@@ -4,16 +4,39 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 
-menuToggle.addEventListener('click', () => {
-  const isOpen = nav.classList.toggle('open');
+function setMenuOpen(isOpen) {
+  nav.classList.toggle('open', isOpen);
   menuToggle.setAttribute('aria-expanded', String(isOpen));
+  menuToggle.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
+}
+
+menuToggle.addEventListener('click', () => {
+  setMenuOpen(menuToggle.getAttribute('aria-expanded') !== 'true');
 });
 
 nav.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => {
-    nav.classList.remove('open');
-    menuToggle.setAttribute('aria-expanded', 'false');
+    setMenuOpen(false);
   });
+});
+
+document.addEventListener('pointerdown', (event) => {
+  if ((!event.target.closest('.topbar') || event.target.closest('.header-contact, .brand')) && menuToggle.getAttribute('aria-expanded') === 'true') {
+    setMenuOpen(false);
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
+    setMenuOpen(false);
+    menuToggle.focus();
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 760 && menuToggle.getAttribute('aria-expanded') === 'true') {
+    setMenuOpen(false);
+  }
 });
 
 const animatedSections = document.querySelectorAll('.reveal');
